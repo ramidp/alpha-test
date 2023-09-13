@@ -97,3 +97,11 @@ closeBtn.addEventListener('click', function(){
 
 })
 
+
+// LOADER
+
+const loaderDiv = document.getElementById('loader')
+
+setTimeout(() => {
+    loaderDiv.style.display = 'none'
+}, 1010)

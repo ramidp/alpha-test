@@ -6,9 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ 
 </head>
 
 <body>
+
+
+    
 
     <header id="header">
 
@@ -77,11 +84,20 @@
 
                     <div class="brand-main-info">
     
-                        <h1>Chicago’s <span>Free</span> Medical Check-Up and Weight Loss Consultation</h1>
+                        <h1
+                        data-aos="fade-in"  
+                        data-aos-delay='800'   
+                        >Chicago’s <span>Free</span> Medical Check-Up and Weight Loss Consultation</h1>
+                        
+                        <p    
+                        data-aos="fade-in"  
+                        data-aos-delay='1000'                        
+                        class='tablet spots'>Only<span> 11 </span>sports available!</p>
 
-                        <p class='tablet spots'>Only<span> 11 </span>sports available!</p>
-
-                        <p class="desktop">Limited spots available due to the Physicians schedule and the high demand for service. No credit card or insurance required.</p>    
+                        <p  
+                        data-aos="fade-in"  
+                        data-aos-delay='1000'   
+                        class="desktop">Limited spots available due to the Physicians schedule and the high demand for service. No credit card or insurance required.</p>    
                         <button class="desktop">Book my appointment</button>
                         
                     </div>
@@ -177,7 +193,9 @@
 
             <div class="sect2-container">
 
-                <div class="sect2-consult">
+                <div 
+                data-aos='fade-up'
+                class="sect2-consult">
                     <h2>Who Is The Consultation For?</h2>
 
                     <p>Chicago’s free medical check-up and weight loss consultation is for Chicago residents who are looking to lose weight so they can live a long, vibrant and healthy life, while looking good and not breaking the bank.</p>
@@ -205,7 +223,9 @@
 
             <h1>We Can Help You</h1>
 
-            <p>Who We Are
+            <p
+            data-aos="fade-in"
+            >Who We Are
             For those of us who struggle with our weight
             it's easy to lose hope. We have seen so many tricks, gimmicks and weight loss programs that simply do not work for us.
             They want us to eat like a pigeon, avoid all the things we love to eat and work out till we cry.                
@@ -217,7 +237,9 @@
             
             <img class='tablet' src="./images/gente2.png" alt="">
 
-            <p>You can join the ranks of our over 15,000 satisfied clients who have lost weight, regained their confidence and are living happy exuberant lives with their family. They did this without: breaking the bank, sweating buckets in intense workout programs, and most importantly, without giving up ice-cream, bread, pizza, doughnuts and all their favorite foods.</p>
+            <p
+            data-aos="fade-in"
+            >You can join the ranks of our over 15,000 satisfied clients who have lost weight, regained their confidence and are living happy exuberant lives with their family. They did this without: breaking the bank, sweating buckets in intense workout programs, and most importantly, without giving up ice-cream, bread, pizza, doughnuts and all their favorite foods.</p>
 
             <button>Book my appointment</button>
 
@@ -246,7 +268,9 @@
                <h1>What You'll Get At Your <span>Free</span> Consultation</h1>
 
                <div class="sect4-free-consult">
-                   <div class="sect4-item">
+                   <div 
+                   data-aos="fade-up"
+                   class="sect4-item">
                     <h2>Body Mass Index</h2>
                     <ul>
                         <li>Complete understanding of your body composition</li>
@@ -254,7 +278,9 @@
                         <li>Clear data to help you make an informed decision about your health</li>
                     </ul>                 
                    </div>
-                   <div class="sect4-item">
+                   <div 
+                   data-aos="fade-up"
+                   class="sect4-item">
                     <h2 class="alt-color">Vital Signs Check</h2>
                     <ul>
                         <li>Body temperature</li>
@@ -445,8 +471,23 @@
 
     </footer>
     
+    <div
+    id="loader"   
+    class="loader">
+
+    <h1
+    data-aos="fade-out">       
+    W e l c o m e
+    </h1>
+</div>
 
     <script src="scripts.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 750
+        });
+      </script>
 
 </body>
 
