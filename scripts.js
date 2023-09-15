@@ -1,3 +1,16 @@
+const shouldReload = localStorage.getItem('shouldReload');
+
+
+function reloadAndReset() {
+    if (!shouldReload) {
+        location.reload();
+        localStorage.setItem('shouldReload', 'true'); 
+    } else {
+        localStorage.removeItem('shouldReload');
+    }
+}
+
+setTimeout(reloadAndReset, 100);
 
 // COUNTDOWN WITH LOCALSTORAGE (To save the number and if you refresh the Page, the countdown is still at the same time)
 
